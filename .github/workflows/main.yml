@@ -1,0 +1,17 @@
+name: Google Ping Barlagy
+
+
+on:
+  push:
+    branches: [ "main" ]  
+  workflow_dispatch:     
+
+jobs:
+  ping_isi:
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Google-a Ping Ugratmak
+        run: |
+          echo "Google serwerine baglanyşyk barlanýar..."
+          ping -c 4 google.com
