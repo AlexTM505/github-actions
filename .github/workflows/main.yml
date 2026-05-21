@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest  
 
     steps:
-      - name: Google-a Ping Ugratmak
+      - name: Google-a HTTP Soragy Ugratmak
         run: |
-          echo "Google serwerine baglanyşyk barlanýar..."
-          ping -c 4 google.com
+          echo "Google web sahypasyna baglanyşyk barlanýar..."
+          curl -I https://www.google.com
